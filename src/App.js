@@ -80,19 +80,17 @@ function App() {
             <p>{`function App() {`}</p>
             <p>const [products] = useState(ProductList);</p>
             <p className="note">
-              Here we are going to pretend <span>ProductList</span> is a file we
-              have created elsewhere and imported.
+              // Here we are going to pretend <span>ProductList</span> is a file we
+              have created elsewhere and imported to initialize state.
             </p>
             <p>const [cart, setCart] = useState([]);</p>
             <p>{`const stateFunction = (item) => {
               setCart([...cart, item]);
             };`}</p>
-            <p>
-              {`return {`}
-              <p>{`<MyFirstContext.Provider value={{ products, stateFunction }}>`}</p>
-              <p>{`<Component />`}</p>
-              <p>{`</MyFirstContext.Provider>`}</p>
-            </p>
+            <p>{`return {`}</p>
+            <p>{`<MyFirstContext.Provider value={{ products, stateFunction }}>`}</p>
+            <p>{`<Component />`}</p>
+            <p>{`</MyFirstContext.Provider>`}</p>
           </div>
         </div>
         <div className="step">
